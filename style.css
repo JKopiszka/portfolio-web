@@ -1,0 +1,76 @@
+/* Personal Website Stylesheet */
+
+/* FONTS */
+@font-face {
+    font-family: geoform;
+    src: url(fonts/Geoform.otf);
+}
+
+/* VARIABLES */
+:root {
+
+}
+
+/* MAIN STYLE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: geoform, Arial, Helvetica, sans-serif;
+    background-color: #292F36;
+}
+
+header {
+    background-color: #4ECDC4;
+    color: #FFFFFF;
+
+    padding: 20px;
+    width: 100%;
+    height: auto;
+
+    text-align: center;
+    font-size: 26px;
+}
+
+nav {
+    background-color: #1f8680;
+    color: white;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+nav li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 20px;
+    height: 100%;
+    transition: background-color 0.5s ease;
+}
+
+nav li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 900;
+
+    transition: background-color 0.5s ease;
+}
+
+nav li:hover{
+    background-color: #858585;
+}
+
+@media (max-width: 500px) {
+    body {
+        background-size: 200% auto;
+        background-position:-50vw 0;
+    }
+}
