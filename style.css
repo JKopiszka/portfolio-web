@@ -1,9 +1,22 @@
 /* Personal Website Stylesheet */
 
+@charset "UTF-8";
+
+
 /* FONTS */
 @font-face {
     font-family: geoform;
     src: url(fonts/Geoform.otf);
+}
+
+@font-face {
+    font-family: lemonmilk;
+    src: url(fonts/LEMONMILK-Medium.otf);
+}
+
+@font-face {
+    font-family: retrotech;
+    src: url(fonts/RETROTECH.ttf);
 }
 
 /* VARIABLES */
@@ -22,15 +35,13 @@
 body {
     font-family: geoform, Arial, Helvetica, sans-serif;
     background-color: #292F36;
+    color: white;
 }
 
 header {
     background-color: #4ECDC4;
-    color: #FFFFFF;
 
     padding: 20px;
-    width: 100%;
-    height: auto;
 
     text-align: center;
     font-size: 26px;
@@ -38,39 +49,73 @@ header {
 
 nav {
     background-color: #1f8680;
-    color: white;
 
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
-    height: auto;
 }
 
 nav li {
     display: inline-block;
     list-style-type: none;
-    padding: 20px;
-    height: 100%;
-    transition: background-color 0.5s ease;
 }
 
 nav li a {
+    display: block;
+
     color: white;
     font-size: 18px;
     text-decoration: none;
     font-weight: 900;
 
+    padding: 20px;
     transition: background-color 0.5s ease;
 }
 
-nav li:hover{
+nav li a:hover{
     background-color: #858585;
 }
 
-@media (max-width: 500px) {
-    body {
-        background-size: 200% auto;
-        background-position:-50vw 0;
+/* CLASSES */
+
+.f-width {
+    width: 100% !important;
+    height: auto ip !important;
+}
+
+.f-height {
+    height: 100% !important;
+    width: auto !important;
+}
+
+.content-box {
+    display: block;
+    width: 50%;
+    background-color: #1f8680;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.content-row {
+    display: block;
+    width: 100%;
+    background-color: #1f8680;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.content-box p {
+    margin-bottom: 15px;
+}
+.c-row {
+    display: flex;
+    padding: 10px;
+}
+/* ID'S */
+
+/* RESPONSIVES */
+@media screen and (max-width: 1000px) {
+    .content-box {
+        width: 100%;
     }
 }
