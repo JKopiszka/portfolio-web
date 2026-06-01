@@ -15,14 +15,12 @@
 }
 
 @font-face {
-    font-family: retrotech;
-    src: url(fonts/RETROTECH.ttf);
+    font-family: pixel;
+    src: url(fonts/EditUndo.ttf);
 }
 
 /* VARIABLES */
-:root {
-
-}
+:root {}
 
 /* MAIN STYLE */
 
@@ -30,17 +28,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    font-family: geoform, Arial, Helvetica, sans-serif;
 }
 
 body {
-    font-family: geoform, Arial, Helvetica, sans-serif;
     background-color: #0C0C0C;
     color: #D3DAD9;
 }
 
-
 h1 {
-    font-size: 55pt;
+    font-size: 30pt;
 }
 
 header {
@@ -61,13 +59,20 @@ nav {
     box-shadow: 0px 10px 10px #021526;
 }
 
+nav ul {
+    float: right;
+}
+
 nav li {
     display: inline-block;
     list-style-type: none;
 }
 
-nav li a {
+nav li button {
     display: block;
+
+    background-color: unset;
+    border: unset;
 
     color: white;
     font-size: 18px;
@@ -78,8 +83,24 @@ nav li a {
     transition: background-color 0.5s ease;
 }
 
-nav li a:hover{
+nav li button:hover {
     background-color: #858585;
+
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+}
+
+hr {
+    height: 2px;
+    width: 80%;
+    border-width: 0;
+    color: gray;
+    background-color: gray;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* CLASSES */
@@ -110,11 +131,78 @@ nav li a:hover{
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+.text-b {
+    font-weight: bold;
+}
+
+.text-bb {
+    font-weight: bolder;
+}
+
+
+.title {
+    float: left;
+    font-family: pixel;
+}
+
+.ib-center {
+    display: inline-block;
+    width: fit-content;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.bigtitle {
+    font-family: monospace;
+}
+
 /* ID'S */
+
+#cursor-blink {
+    font-family: inherit;
+    animation-name: 'cursor_blinking';
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
 
 /* RESPONSIVES */
 @media screen and (max-width: 1000px) {
-    .content-box {
+    nav {
+
+        display: inline-block;
         width: 100%;
+    }
+
+    .title {
+        float: none;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline;
+    }
+
+    nav ul li button {
+        margin: auto;
+    }
+
+    nav ul {
+        float: none;
+    }
+}
+
+@keyframes cursor_blinking {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
