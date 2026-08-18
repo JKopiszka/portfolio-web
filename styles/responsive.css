@@ -1,0 +1,79 @@
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .menu {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: var(--nav-bg);
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 0;
+        gap: 0;
+
+        display: none; /* hidden by default */
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu-item {
+        width: 100%;
+        justify-content: flex-start;
+        padding: 15px 20px;
+        height: auto;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* HERO MOBILE */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        padding: 40px 20px;
+    }
+
+    .hero-left {
+        max-width: 100%;
+    }
+
+    .hero-title {
+        font-size: 42px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .hero-photo {
+        width: 200px;
+    }
+
+    /* INTERESTS */
+    .interests-photo {
+        width: 100%;
+    }
+
+    /* TECHNOLOGIES */
+    .tech-row {
+        justify-content: center;
+    }
+
+    /* PROJECTS */
+    .project-card.wide {
+        max-width: 100%;
+        margin: 0 0 40px 0;
+    }
+
+    .project-img {
+        max-height: 180px;
+    }
+}

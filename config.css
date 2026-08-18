@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/* Jakub Kopiszka – portfolio website */
+/* Main stylesheet */
+/* Jakub Kopiszka (c) 2026 */
+
+@import "styles/var.css";
+@import "styles/fonts.css";
+@import "styles/animations.css";
+@import "styles/menu.css";
+@import "styles/spa.css";
+@import "styles/responsive.css";
+
+
+/* Reset of default values */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

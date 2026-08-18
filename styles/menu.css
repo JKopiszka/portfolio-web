@@ -1,0 +1,80 @@
+.navbar {
+    background: var(--nav-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 5px 15px #000;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    font-family: pixel;
+}
+
+.logo #cursor-blink {
+    animation: blink-cursor;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 50px;
+    padding: 0 20px;
+
+    background: none;
+    border: none;
+    color: var(--fg);
+    font-size: 18px;
+    cursor: pointer;
+
+    text-decoration: none;
+
+    transition: background 0.3s ease;
+}
+
+.menu-item:hover {
+    background: var(--nav-hover);
+}
+
+.menu-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger span {
+    width: 28px;
+    height: 3px;
+    background: var(--fg);
+    border-radius: 3px;
+}

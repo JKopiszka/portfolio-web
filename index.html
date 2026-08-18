@@ -14,7 +14,7 @@
     <meta property="og:image" content="media/preview.png">
 
     <link rel="icon" type="image/png" href="favicon.ico">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="config.css">
     <title>Jakub Kopiszka – Portfolio</title>
 </head>
 
@@ -42,19 +42,23 @@
             </li>
 
         </ul>
+        <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
-    <button class="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-
     <main>
 
         <!-- HOME SECTION -->
-        <section id="home" class="section active">
+        <section id="home" class="section active fade-in">
 
             <!-- HERO -->
             <section class="hero">
+                <div class="hero-photo-wrapper">
+                    <img src="media/ja.jpg" alt="Jakub Kopiszka" class="hero-photo">
+                </div>
+
                 <div class="hero-left">
                     <h1 class="hero-title">Jakub Kopiszka</h1>
                     <p class="hero-subtitle">Junior Developer | Railway Safety & Automation</p>
@@ -63,10 +67,6 @@
                         I have a strong preference for combining software with hardware.
                         Since I’m a big transport enthusiast, working in this field is the perfect fit for me.
                     </p>
-                </div>
-
-                <div class="hero-photo-wrapper">
-                    <img src="media/ja.jpg" alt="Jakub Kopiszka" class="hero-photo">
                 </div>
             </section>
 
