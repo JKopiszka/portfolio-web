@@ -2,7 +2,6 @@
 <html lang="pl-PL">
 
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Jakub Kopiszka">
@@ -20,66 +19,155 @@
 </head>
 
 <body>
-<nav class="navbar">
-    <h1 class="logo">JK#<span id="cursor-blink">\</span></h1>
-    <ul class="menu">
-        <li><button data-section="home">About me</button></li>
-        <li><button data-section="projekty">Projects</button></li>
-        <li><button data-section="skills">Skills</button></li>
-        <li><button data-section="kontakt">Contact</button></li>
-    </ul>
-</nav>
+    <nav class="navbar">
+        <h1 class="logo">JK#<span id="cursor-blink">\</span></h1>
 
-<main>
+        <ul class="menu">
+            <li><button class="menu-item" data-section="home">About me</button></li>
+            <li><button class="menu-item" data-section="projekty">Projects</button></li>
+            <li><button class="menu-item" data-section="publications">Publications</button></li>
 
-    <!-- HERO -->
-    <section id="hero" class="hero section active">
-        <div class="hero-left">
-            <h1 class="hero-title">Jakub Kopiszka</h1>
-            <p class="hero-subtitle">Junior Developer | Railway Safety & Automation</p>
-            <p class="hero-desc">
-                I am truly passionate about programming, railway traffic safety, and embedded systems.
-                I have a strong preference for combining software with hardware.
-                Since I’m a big transport enthusiast, working in this field is the perfect fit for me.
+            <li>
+                <a class="menu-item" href="https://github.com/JKopiszka" target="_blank">
+                    <img src="https://cdn.simpleicons.org/github/ffffff">
+                    GitHub
+                </a>
+            </li>
+
+            <li>
+                <a class="menu-item" href="https://linkedin.com/in/jakub-kopiszka" target="_blank">
+                    <img src="https://cdn.simpleicons.org/linkedin/ffffff">
+                    LinkedIn
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- HOME SECTION -->
+        <section id="home" class="section active">
+
+            <!-- HERO -->
+            <section class="hero">
+                <div class="hero-left">
+                    <h1 class="hero-title">Jakub Kopiszka</h1>
+                    <p class="hero-subtitle">Junior Developer | Railway Safety & Automation</p>
+                    <p class="hero-desc">
+                        I am truly passionate about programming, railway traffic safety, and embedded systems.
+                        I have a strong preference for combining software with hardware.
+                        Since I’m a big transport enthusiast, working in this field is the perfect fit for me.
+                    </p>
+                </div>
+
+                <div class="hero-photo-wrapper">
+                    <img src="media/ja.jpg" alt="Jakub Kopiszka" class="hero-photo">
+                </div>
+            </section>
+
+            <!-- INTERESTS -->
+            <section class="interests-section">
+                <img src="media/pociag.jpg" alt="Railway" class="interests-photo">
+
+                <div class="interests-text">
+                    <h2>Railway Safety & Automation</h2>
+                    <p>
+                        I am fascinated by railway infrastructure, signalling systems, traffic control automation and
+                        transport safety.
+                        I aim to develop my career in modern railway technologies and their integration with
+                        contemporary software solutions.
+                    </p>
+                </div>
+            </section>
+
+            <!-- TECHNOLOGIES -->
+            <section class="technologies-section">
+                <h2>Technologies</h2>
+
+                <h3>Major</h3>
+                <div class="tech-row">
+                    <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white">
+                    <img
+                        src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white">
+                    <img
+                        src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+                    <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
+                    <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white">
+                    <img
+                        src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white">
+                </div>
+
+                <h3>Minor</h3>
+                <div class="tech-row">
+                    <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white">
+                    <img
+                        src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+                </div>
+            </section>
+
+        </section>
+
+        <section id="projekty" class="section">
+            <h2>Projects</h2>
+
+            <!-- WIDE PROJECT CARD -->
+            <div class="project-card wide">
+                <img src="media/telebeam.jpg" class="project-img">
+
+                <h3>TeleBeam</h3>
+
+                <p class="project-tech">
+                    <img alt="Static Badge"
+                        src="https://img.shields.io/badge/-C%23-green?style=for-the-badge&logo=sharp&logoColor=white">
+                    <img alt="Static Badge"
+                        src="https://img.shields.io/badge/-.NET-darkblue?style=for-the-badge&logo=dotnet&logoColor=white">
+                    <img alt="Static Badge"
+                        src="https://img.shields.io/badge/-windows-cyan?style=for-the-badge&logoColor=white">
+                    <img alt="Static Badge"
+                        src="https://img.shields.io/badge/-git-orange?style=for-the-badge&logo=git&logoColor=white">
+                </p>
+
+                <p class="project-desc">
+                    Designed for smaller football clubs application, simultaneously displaying
+                    scoreboard with possibility to display goals, cards, messages etc.
+                </p>
+            </div>
+
+            <!-- NARROW PROJECT CARDS -->
+            <!-- <div class="projects-grid">
+
+        <div class="project-card narrow">
+            <img src="media/project_small1.jpg" class="project-img">
+
+            <h3>Signal Decoder</h3>
+
+            <p class="project-tech">
+                <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white">
+                <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white">
             </p>
-        </div>
 
-        <div class="hero-photo-wrapper">
-            <img src="media/ja.jpg" alt="Jakub Kopiszka" class="hero-photo">
-        </div>
-    </section>
-
-    <!-- ZAINTERESOWANIA -->
-    <section id="interests" class="interests-section">
-        <img src="media/pociag.jpg" alt="Railway" class="interests-photo">
-
-        <div class="interests-text">
-            <h2>Railway Safety & Automation</h2>
-            <p>
-                Fascynuje mnie infrastruktura kolejowa, systemy SRK, automatyka sterowania ruchem
-                oraz bezpieczeństwo transportu. Chcę rozwijać się w kierunku technologii kolejowych
-                i ich integracji z nowoczesnym oprogramowaniem.
+            <p class="project-desc">
+                A tool for decoding railway signal aspects from raw data streams.
             </p>
-        </div>
-    </section>
 
-    <section id="projekty" class="section">
-        <h2>Projekty</h2>
-        <p>Tu pojawią się Twoje projekty.</p>
-    </section>
+            <a class="project-btn" href="https://github.com/JKopiszka/SignalDecoder" target="_blank">
+                <img src="https://cdn.simpleicons.org/github/000000" class="btn-icon">
+                Zobacz na GitHub
+            </a>
+        </div> -->
+        </section>
 
-    <section id="skills" class="section">
-        <h2>Umiejętności</h2>
-        <p>Lista Twoich umiejętności.</p>
-    </section>
 
-    <section id="kontakt" class="section">
-        <h2>Kontakt</h2>
-        <p>Email: jakub@example.com</p>
-    </section>
+        <!-- PUBLICATIONS -->
+        <section id="publications" class="section">
+            <h2>Publications</h2>
+            <ul id="pub-list"></ul>
+        </section>
 
-</main>
+    </main>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
