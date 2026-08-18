@@ -1,48 +1,85 @@
-<!--Jakub Kopiszka Portfolio website-->
-
 <!DOCTYPE html>
 <html lang="pl-PL">
 
 <head>
-    <!--METATAGS-->
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Jakub Kopiszka">
-    <meta name="description" content="Portfolio">
-    <meta name="keywords" content="Jakub, Kopiszka, Portfolio, Chojnice">
+    <meta name="description" content="Portfolio Jakuba Kopiszki – projekty, umiejętności, kontakt.">
+    <meta name="keywords" content="Jakub Kopiszka, portfolio, projekty, programowanie, Chojnice">
 
-    <!--MISC-->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta property="og:title" content="Portfolio – Jakub Kopiszka">
+    <meta property="og:description" content="Moje projekty, umiejętności i kontakt.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="media/preview.png">
+
     <link rel="icon" type="image/png" href="favicon.ico">
-    <title>Jakub Kopiszka</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Jakub Kopiszka – Portfolio</title>
 </head>
 
 <body>
+<nav class="navbar">
+    <h1 class="logo">JK#<span id="cursor-blink">\</span></h1>
+    <ul class="menu">
+        <li><button data-section="home">About me</button></li>
+        <li><button data-section="projekty">Projects</button></li>
+        <li><button data-section="skills">Skills</button></li>
+        <li><button data-section="kontakt">Contact</button></li>
+    </ul>
+</nav>
 
-    <!--NAVIGATION BAR-->
-    <nav class="f-width">
-        <h1 class="text-b title">JK#<span id="cursor-blink">\</span></h1>
-        <ul>
-            <li><button>Projekty</button></li>
-            <li><button>Umiejętności</button></li>
-            <li><button>Kontakt</button></li>
-            <li><button>
-                    <img src="media/github.svg" alt="GitHub logo"
-                        style="height:18px; width: auto; margin-right: 5px">GitHub</button></li>
-            <li><button>
-                    <img src="media/linkedin.svg" alt="linkedin logo"
-                        style="height:15px; width: auto; margin-right: 5px">LinkedIn</button></li>
-        </ul>
-    </nav>
+<main>
 
-    <section class="content-row ib-center">
-        <h1 class='bigtitle'>Jakub Kopiszka</h1>
+    <!-- HERO -->
+    <section id="hero" class="hero section active">
+        <div class="hero-left">
+            <h1 class="hero-title">Jakub Kopiszka</h1>
+            <p class="hero-subtitle">Junior Developer | Railway Safety & Automation</p>
+            <p class="hero-desc">
+                I am truly passionate about programming, railway traffic safety, and embedded systems.
+                I have a strong preference for combining software with hardware.
+                Since I’m a big transport enthusiast, working in this field is the perfect fit for me.
+            </p>
+        </div>
+
+        <div class="hero-photo-wrapper">
+            <img src="media/ja.jpg" alt="Jakub Kopiszka" class="hero-photo">
+        </div>
     </section>
 
-    <main>
+    <!-- ZAINTERESOWANIA -->
+    <section id="interests" class="interests-section">
+        <img src="media/pociag.jpg" alt="Railway" class="interests-photo">
 
-    </main>
+        <div class="interests-text">
+            <h2>Railway Safety & Automation</h2>
+            <p>
+                Fascynuje mnie infrastruktura kolejowa, systemy SRK, automatyka sterowania ruchem
+                oraz bezpieczeństwo transportu. Chcę rozwijać się w kierunku technologii kolejowych
+                i ich integracji z nowoczesnym oprogramowaniem.
+            </p>
+        </div>
+    </section>
 
+    <section id="projekty" class="section">
+        <h2>Projekty</h2>
+        <p>Tu pojawią się Twoje projekty.</p>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Umiejętności</h2>
+        <p>Lista Twoich umiejętności.</p>
+    </section>
+
+    <section id="kontakt" class="section">
+        <h2>Kontakt</h2>
+        <p>Email: jakub@example.com</p>
+    </section>
+
+</main>
+
+<script src="script.js"></script>
 </body>
-
 </html>
