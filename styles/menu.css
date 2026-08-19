@@ -62,6 +62,10 @@
     margin-right: 8px;
 }
 
+.menu-item.link {
+    font-weight: bolder;
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
